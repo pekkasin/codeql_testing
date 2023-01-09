@@ -64,15 +64,6 @@ jobs:
     #   uses: github/codeql-action/autobuild@v2
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.1
-      
-    - name: Add node to PATH
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-        
-    - name: Run npm install
-      run: |
-        npm install
     
     - name: Install Nuget to restore packages
       uses: nuget/setup-nuget@v1
