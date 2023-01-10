@@ -16,10 +16,10 @@ env:
 
 on:
   push:
-    branches: [ test-*, master ]
+    branches: [ test-*, main ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ test-*, master ]
+    branches: [ test-*, main ]
   schedule:
     - cron: '25 19 * * 0'
 
